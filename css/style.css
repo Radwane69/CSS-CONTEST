@@ -37,6 +37,8 @@ li {
     rgba(0, 0, 0, 0.8) 64px,
     rgba(0, 0, 0, 0.8) 96px
   );
+  display: flex;
+  align-items: center;
 }
 
 a {
@@ -47,25 +49,91 @@ a {
   justify-content: center;
   list-style: none;
   width: 40px;
+  text-decoration: none;
+  color: white;
 }
 
 body {
   margin: 0 auto;
+  font-family: 'Faster One', cursive;
+  max-width: 100%;
 }
 
 .bg {
   background: url(../img/Need-For-Speed-Hot-Pursuit-Remastered.jpg) no-repeat;
-  height: 400px;
+  height: 412px;
   background-size: cover;
   background-position-y: -12rem;
 }
 
+.btn a, .title a {
+    width: unset;
+}
+
+.btn a+a {
+    padding: 2rem;
+}
+
 .arial {
   display: block;
-  padding: 2rem;
+  padding: 1.8rem;
 }
 
 .arial img {
   height: 38px;
   width: 9rem;
+}
+
+div.bg2 {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  height: 40px;
+  justify-content: center;
+  list-style: none;
+  width: 40px;
+}
+
+@font-face {
+    font-family: "ea-font";
+    src: url(../font/ElectronicArtsDisplay-Bold.woff2) format("woff2");
+}
+
+.title {
+    margin-left: 17rem;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    justify-content: center;
+}
+
+.title a+a {
+    padding-left: 2rem;
+}
+
+.title button {
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    height: 3.5rem;
+    width: 10.5rem;
+    cursor: pointer;
+}
+
+.title button:first-of-type {
+    background-color: #FF4747;
+    margin-right: 2rem;
+}
+
+.title button:last-of-type {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 1px white;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main a {
+    color: #FF4747;
 }
