@@ -3,8 +3,11 @@ a img {
 }
 
 header {
-  background-color: #161616;
   margin: 0 auto;
+}
+
+header nav {
+  background-color: #161616;
 }
 
 ul {
@@ -27,6 +30,15 @@ li {
   list-style: none;
 }
 
+.btn {
+  background: linear-gradient(
+    to top,
+    transparent 0,
+    rgba(0, 0, 0, 0.8) 64px,
+    rgba(0, 0, 0, 0.8) 96px
+  );
+}
+
 a {
   align-items: center;
   cursor: pointer;
@@ -41,23 +53,19 @@ body {
   margin: 0 auto;
 }
 
-div.btn {
-  background: linear-gradient(
-    to top,
-    transparent 0,
-    rgba(0, 0, 0, 0.6) 80px,
-    rgba(0, 0, 0, 0.7) 120px
-  );
-}
-
-btn.img {
-  width: 100%;
-  max-height: 40px;
-  max-width: 90px;
-  height: 120px;
-}
-
-body {
+.bg {
   background: url(../img/Need-For-Speed-Hot-Pursuit-Remastered.jpg) no-repeat;
+  height: 400px;
   background-size: cover;
+  background-position-y: -12rem;
+}
+
+.arial {
+  display: block;
+  padding: 2rem;
+}
+
+.arial img {
+  height: 38px;
+  width: 9rem;
 }
