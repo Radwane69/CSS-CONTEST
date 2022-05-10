@@ -55,7 +55,7 @@ a {
 
 body {
   margin: 0 auto;
-  font-family: 'Faster One', cursive;
+  font-family: "Faster One", cursive;
   max-width: 100%;
 }
 
@@ -66,12 +66,16 @@ body {
   background-position-y: -12rem;
 }
 
-.btn a, .title a {
-    width: unset;
+.btn a,
+.title a {
+  width: unset;
+  display: flex;
+  justify-content: center;
 }
 
-.btn a+a {
-    padding: 2rem;
+.btn a + a {
+  padding: 2rem;
+  color: white;
 }
 
 .arial {
@@ -95,45 +99,94 @@ div.bg2 {
 }
 
 @font-face {
-    font-family: "ea-font";
-    src: url(../font/ElectronicArtsDisplay-Bold.woff2) format("woff2");
+  font-family: "ea-font";
+  src: url(../font/ElectronicArtsDisplay-Bold.woff2) format("woff2");
 }
 
 .title {
-    margin-left: 17rem;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 550px;
-    justify-content: center;
+  margin-left: 17rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+  justify-content: center;
 }
 
-.title a+a {
-    padding-left: 2rem;
+.title a + a {
+  padding-left: 2rem;
 }
 
 .title button {
-    outline: none;
-    color: white;
-    border-radius: 5px;
-    height: 3.5rem;
-    width: 10.5rem;
-    cursor: pointer;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  height: 3.5rem;
+  width: 10.5rem;
+  cursor: pointer;
 }
 
 .title button:first-of-type {
-    background-color: #FF4747;
-    margin-right: 2rem;
+  background-color: #ff4747;
+  margin-right: 2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.2rem;
 }
 
 .title button:last-of-type {
-    background-color: transparent;
-    box-shadow: 0px 0px 0px 1px white;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 1px white;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
 }
 
 main {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 main a {
-    color: #FF4747;
+  display: contents;
+  color: #ff4747;
+}
+
+p {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-block: 3rem;
+  width: 860px;
+}
+
+.button-name {
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px, inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
+    rgba(45, 35, 66, 0.2) 0 7px 13px -3px, inset;
+  transform: translateY(-2px);
 }
