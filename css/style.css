@@ -190,3 +190,14 @@ p {
     rgba(45, 35, 66, 0.2) 0 7px 13px -3px, inset;
   transform: translateY(-2px);
 }
+
+.content img {
+  width: 30%;
+  margin-bottom: 300px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20px;
+}
