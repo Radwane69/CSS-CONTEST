@@ -1,3 +1,8 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
 a img {
   width: 20px;
 }
@@ -41,7 +46,7 @@ li {
   align-items: center;
 }
 
-a {
+header a {
   align-items: center;
   cursor: pointer;
   display: inline-flex;
@@ -193,13 +198,37 @@ p {
 
 .content img {
   width: 26%;
-  margin-bottom: 300px;
+  margin: inherit;
+  padding: 0.5rem;
 }
 
 .content {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
-  padding: 2rem 12rem;
-  justify-content: space-evenly;
+  padding: 0rem 18.5rem;
+  padding-right: 5rem;
+}
+
+footer {
+  background-color: #252525;
+  padding: 1rem 19rem;
+}
+
+h6 {
+  font-family: "Prompt", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+
+.okay {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+}
+
+h5 {
+  font-family: "Prompt", sans-serif;
+  color: white;
 }
