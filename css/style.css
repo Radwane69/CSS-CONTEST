@@ -1,4 +1,4 @@
-a {
+.logo a {
   text-decoration: none;
   color: white;
 }
@@ -81,6 +81,12 @@ body {
 .btn a + a {
   padding: 2rem;
   color: white;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.btn a + a:hover {
+  color: #ff4747;
 }
 
 .arial {
@@ -109,7 +115,7 @@ div.bg2 {
 }
 
 .title {
-  margin-left: 17rem;
+  margin-left: 13rem;
   display: flex;
   flex-wrap: wrap;
   max-width: 550px;
@@ -150,6 +156,7 @@ main {
 main a {
   display: contents;
   color: #ff4747;
+  position: relative;
 }
 
 p {
@@ -193,13 +200,16 @@ p {
 .button-name:hover {
   box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px,
     rgba(45, 35, 66, 0.2) 0 7px 13px -3px, inset;
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
 
 .content img {
   width: 26%;
   margin: inherit;
   padding: 0.5rem;
+  transition: transform 0.4s;
+  position: relative;
+  display: block;
 }
 
 .content {
@@ -219,8 +229,8 @@ h6 {
   font-family: "Prompt", sans-serif;
   color: white;
   font-size: 13px;
+  margin: 30px 0;
 }
-
 
 .okay {
   display: flex;
@@ -231,4 +241,70 @@ h6 {
 h5 {
   font-family: "Prompt", sans-serif;
   color: white;
+  text-align: right;
+  padding-bottom: 0;
+  margin: 30px 0;
+}
+
+.grpfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: solid 1px #ebe1d3;
+}
+
+footer ul {
+  margin: 0 9px 0 0;
+  color: white;
+}
+
+footer li + li {
+  padding-left: 2rem;
+}
+
+footer li:hover {
+  transform: scale(1.1);
+}
+
+.okay a {
+  color: #ebe1d3;
+  text-decoration: none;
+  transition: all 0.1s;
+}
+
+.okay a:hover {
+  color: #ff4747;
+}
+
+footer img {
+  width: 65px;
+  padding-block: 2rem;
+}
+
+.flex a {
+  text-align: right;
+  display: block;
+}
+
+.content img::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.6) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.content img {
+  transition: transform 0.3s;
+}
+
+.content img:hover {
+  transform: scale(1.1);
 }
