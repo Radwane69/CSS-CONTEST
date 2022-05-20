@@ -109,11 +109,6 @@ div.bg2 {
   width: 40px;
 }
 
-@font-face {
-  font-family: "ea-font";
-  src: url(../font/ElectronicArtsDisplay-Bold.woff2) format("woff2");
-}
-
 .title {
   margin-left: 13rem;
   display: flex;
@@ -291,5 +286,5 @@ footer img {
 }
 
 .content img:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
