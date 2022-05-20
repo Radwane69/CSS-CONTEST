@@ -283,8 +283,10 @@ footer img {
 
 .content img {
   transition: transform 0.3s;
+  
 }
 
 .content img:hover {
   transform: scale(0.9);
+  opacity: 0.8;
 }
