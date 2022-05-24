@@ -58,9 +58,14 @@ header a {
   color: white;
 }
 
+header a:hover {
+  transform: matrix3d(0.9);
+  opacity: 0.8;
+}
+
 body {
   margin: 0 auto;
-  font-family: "Faster One", cursive;
+  font-family: "Kanit", sans-serif;
   max-width: 100%;
 }
 
@@ -79,7 +84,7 @@ body {
 }
 
 .btn a + a {
-  padding: 2rem;
+  padding: 1rem;
   color: white;
   text-decoration: none;
   transition: all 0.1s;
@@ -124,7 +129,7 @@ div.bg2 {
 .title button {
   outline: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 2px;
   height: 3.5rem;
   width: 10.5rem;
   cursor: pointer;
@@ -213,6 +218,7 @@ p {
   width: 75%;
   padding: 0rem 18.5rem;
   padding-right: 5rem;
+  padding-bottom: 1rem;
 }
 
 footer {
@@ -221,9 +227,9 @@ footer {
 }
 
 h6 {
-  font-family: "Prompt", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: white;
-  font-size: 13px;
+  font-size: 15px;
   margin: 30px 0;
 }
 
@@ -234,11 +240,12 @@ h6 {
 }
 
 h5 {
-  font-family: "Prompt", sans-serif;
+  font-family: "Kanit", sans-serif;
   color: white;
   text-align: right;
   padding-bottom: 0;
   margin: 30px 0;
+  font-size: 14.5px;
 }
 
 .grpfooter {
@@ -283,10 +290,16 @@ footer img {
 
 .content img {
   transition: transform 0.3s;
-  
 }
+
 
 .content img:hover {
   transform: scale(0.9);
   opacity: 0.8;
 }
+
+small {
+  color: #a3a3a3;
+  font-size: 1rem;
+}
+
