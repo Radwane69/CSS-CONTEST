@@ -55,12 +55,13 @@ header a {
   list-style: none;
   width: 40px;
   text-decoration: none;
-  color: white;
+  color: #B0B0B0;
 }
 
 header a:hover {
   transform: matrix3d(0.9);
   opacity: 0.8;
+  color: white;
 }
 
 body {
@@ -204,7 +205,7 @@ p {
 }
 
 .content img {
-  width: 26%;
+  width: 29.5%;
   margin: inherit;
   padding: 0.5rem;
   transition: transform 0.4s;
@@ -216,7 +217,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
-  padding: 0rem 18.5rem;
+  padding: 0rem 13.5rem;
   padding-right: 5rem;
   padding-bottom: 1rem;
 }
@@ -303,3 +304,12 @@ small {
   font-size: 1rem;
 }
 
+.content img:hover {
+  transform: scale(0.9);
+  background: rgb(158, 0, 255);
+  background: linear-gradient(
+    144deg,
+    rgba(158, 0, 255, 0.6026785714285714) 0%,
+    rgba(96, 8, 8, 1) 100%
+  );
+}
